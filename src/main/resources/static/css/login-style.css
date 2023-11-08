@@ -1,0 +1,156 @@
+body {
+    font-family: OCR A Std, monospace; /* Use a fantasy font */
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12cbe8a4-f55c-4b40-85bb-d8e1405e7b84/d9m693z-54a16dad-5089-4910-93ce-0e3698b7fde9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyY2JlOGE0LWY1NWMtNGI0MC04NWJiLWQ4ZTE0MDVlN2I4NFwvZDltNjkzei01NGExNmRhZC01MDg5LTQ5MTAtOTNjZS0wZTM2OThiN2ZkZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WV7g8m3Pev12qOJdj_A_bEwJUw-jN_Q4MwGZZzp9Jxw'); /* Add the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    background-position: center center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(169, 247, 161, 0.2); /* Use a semi-transparent background color for better readability */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.4s;
+}
+
+header .menu a:hover {
+    color: #7fe354;
+}
+
+main {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#home.hero {
+    text-align: center;
+    padding: 10vh 0; /* Adjust the top padding to center the content */
+}
+
+section#home.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #f55fb7; /* Engaging color */
+    text-transform: uppercase; /* Uppercase text */
+    animation: pulse 3s infinite; /* Add a pulsating animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+section#home.hero p {
+    font-size: 1.3rem;
+    margin: 9px 0 0; /* Adjust the top margin to position the paragraph under the h1 */
+    color: #fff;
+}
+
+
+main section.login-section {
+    text-align: center;
+    position: relative;
+    max-width: 400px; /* Set a maximum width for the login box */
+    width: 100%;
+    margin: 0 auto; /* Center the login box horizontally */
+}
+
+main .login-box {
+    display: inline-block;
+}
+
+main .login-box h2 {
+    font-size: 2rem;
+    color: #FFFF00;
+    margin-bottom: 20px;
+}
+
+main .login-form label {
+    display: block;
+    margin-top: 2px;
+    font-weight: bold;
+    color: #f4ebf5;
+    text-align: left;
+        font-size: 1.2rem;
+
+}
+
+main .login-form input[type="text"],
+main .login-form input[type="password"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(235, 231, 117, 0.7);
+}
+
+main .login-form button {
+    color: #FFFF00  ;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #f55fb7;
+    transition: background-color 0.2s;
+}
+
+main .login-form button:hover {
+    background-color: #FFFF00;
+    color: #f55fb7;
+}
+
+
+footer {
+    background-color: rgba(169, 247, 161, 0.2); /* Use a semi-transparent background color for better readability */
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+

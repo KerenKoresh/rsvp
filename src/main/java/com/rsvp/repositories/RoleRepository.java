@@ -1,8 +1,8 @@
 package com.rsvp.repositories;
 
-import com.rsvp.entities.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface RoleRepository extends JpaRepository<Role, Long> {
-    Role findByName(String name);
+import javax.management.relation.Role;
+
+public interface RoleRepository extends JpaRepository<Role, String> {
 }

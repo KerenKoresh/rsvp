@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <h1>Event</h1>
@@ -21,16 +21,19 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private LocalDateTime date;
+    private Date date;
+    private String description;
 
     // Constructors
     public Event() {
-        // Default no-argument constructor
+        // Default constructor for JPA
     }
 
-    public Event(String name, LocalDateTime date) {
+    public Event(Long id, String name, Date date, String description) {
+        this.id = id;
         this.name = name;
         this.date = date;
+        this.description = description;
     }
 
     // Getters and Setters
@@ -50,12 +53,26 @@ public class Event {
         this.name = name;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
+    }
+
+    public void addGuest(Guest guest) {
+    }
+
+    public void removeGuest(Guest guest) {
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
 

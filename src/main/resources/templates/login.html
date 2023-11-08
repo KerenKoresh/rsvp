@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/static/css/login-style.css">
+</head>
+<body>
+<header>
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#login">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <h1>Welcome Back!</h1>
+    <p>Please log in to access your account.</p>
+  </section>
+
+  <section id="login" class="login-section">
+    <div class="login-box">
+      <form class="login-form" id="loginForm">
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMessage"></p>
+    </div>
+  </section>
+
+  <section id="placeholder" class="login-placeholder">
+    <p> <br> <br> </p>
+    </SECTION>
+</main>
+
+<footer>
+  <p>&copy; 2023 Keren Koresh. All rights reserved.</p>
+</footer>
+<script src="/static/js/login-script.js"></script>
+</body>
+</html>

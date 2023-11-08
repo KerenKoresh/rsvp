@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+header {
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.5s;
+}
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header .menu a:hover {
+    color: #e0e0e0;
+}
+
+main .hero {
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 120px 0;
+}
+
+main .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+main .hero p {
+    font-size: 1.5rem;
+}
+
+main .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+main .cta-button:hover {
+    background-color: #0056b3;
+}
+
+main section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
+main h2 {
+    color: #007bff;
+}
+
+main .rsvp-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+main .rsvp-form input[type="text"],
+main .rsvp-form input[type="email"],
+main .rsvp-form select,
+main .rsvp-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main .rsvp-form textarea {
+    height: 150px;
+}
+
+main .rsvp-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+main .rsvp-form button:hover {
+    background-color: #0056b3;
+}
+
+main section:hover {
+    background-color: #f0f0f0;
+}

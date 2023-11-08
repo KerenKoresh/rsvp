@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP for Our Event</title>
+  <link rel="stylesheet" href="/static/css/rsvp-style.css">
+</head>
+<body>
+<header>
+  <nav class="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <h1>Welcome to Our Event</h1>
+    <p>Join us for an unforgettable experience.</p>
+    <a href="#rsvp" class="cta-button">RSVP Now</a>
+  </section>
+
+  <section id="about">
+    <h2>About Our Event</h2>
+    <p>Learn about what makes our event special.</p>
+  </section>
+
+  <section id="services">
+    <h2>Event Services</h2>
+    <p>Explore the services we offer.</p>
+  </section>
+
+  <section id="rsvp">
+    <h2>RSVP Form</h2>
+    <form class="rsvp-form" id="rsvpForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="attending">Will you be attending?</label>
+      <select id="attending" name="attending" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="0" required>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit RSVP</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Our Event</p>
+</footer>
+<script src="/static/js/rsvp-script.js"></script>
+</body>
+</html>

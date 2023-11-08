@@ -1,38 +1,13 @@
 package com.rsvp.entities;
 
-import jakarta.persistence.*;
 
-import java.util.Set;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
-@Table(name = "roles")
 public class Role {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     private String name;
-
-    @ManyToMany(mappedBy = "roles")
-    private Set<User> users;
-
-    // Constructors
-    public Role() {
-        // Default constructor
-    }
-
-    public Role(String name) {
-        this.name = name;
-    }
-
-    // Getters and setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -40,13 +15,5 @@ public class Role {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Set<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(Set<User> users) {
-        this.users = users;
     }
 }
